@@ -7,7 +7,6 @@ import { useEffect, useState } from "react";
 import axios from "axios";
 import { Rating } from "@smastrom/react-rating";
 import { FaQuoteLeft } from "react-icons/fa";
-
 import "@smastrom/react-rating/style.css";
 
 const Testimonials = () => {
