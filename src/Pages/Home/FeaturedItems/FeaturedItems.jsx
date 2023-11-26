@@ -1,22 +1,17 @@
 import featureImg from "../../../assets/home/featured.jpg";
 import SectionTitle from "../../../components/SectionTitle/SectionTitle";
-// import "./FeaturedItems.css";
-import { Parallax } from "react-parallax";
+import "./FeaturedItems.css";
+
 
 const FeaturedItems = () => {
     return (
-        <Parallax
-            blur={10}
-            bgImage={featureImg}
-            bgImageAlt="the cat"
-            strength={200}
-        >
-            <div className="feature-item py-10">
+     
+            <div className="feature-item bg-fixed ">
                 <SectionTitle
                     subHeading={"check it out"}
                     heading={"FROM OUR MENU"}
                 ></SectionTitle>
-                <div className="flex items-center gap-8 w-4/5 mx-auto px-20 py-16">
+                <div className="flex items-center gap-8 mx-auto bg-slate-500 bg-opacity-30 py-16 px-20">
                     <div className=" w-1/2">
                         <img src={featureImg} alt="" />
                     </div>
@@ -30,13 +25,13 @@ const FeaturedItems = () => {
                             recusandae ad laudantium tempore consequatur
                             consequuntur omnis ullam maxime tenetur.
                         </p>
-                        <button className="btn btn-outline my-3">
+                        <button className="btn btn-outline border-0 border-b-4 my-3">
                             Read More
                         </button>
                     </div>
                 </div>
             </div>
-        </Parallax>
+       
     );
 };
 

@@ -5,7 +5,6 @@ import MenuItem from "../../Shared/MenuItem/MenuItem";
 
 const PopularMenu = () => {
     const [menu, setMenu] = useState([]);
-    console.log(menu);
 
     useEffect(() => {
         axios("menu.json").then((res) => {
